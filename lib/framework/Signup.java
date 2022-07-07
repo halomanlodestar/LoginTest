@@ -2,20 +2,34 @@ package framework;
 
 import java.awt.*;
 import javax.swing.*;
-
+import javax.swing.border.*;
 import support.writedb;
 
 public class Signup extends frame {
 
     public Signup() {
+
+        // :: OTP PANE 
+
+        JLayeredPane OTP = new JLayeredPane();
+        OTP.setBackground(new Color(0xff00ff));
+        OTP.setBounds(0, 0, 500, 350);
+
         frame signup = new frame();
         signup.setSize(500, 350);
         signup.getContentPane().setBackground(new Color(0x123456));
+        signup.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        signup.setAlwaysOnTop(true);
 
         // @ Buttons
         JButton submit = new JButton("Submit");
         submit.setBounds(205, 230, 95, 30);
         submit.setFont(_font);
+        submit.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED));
+        submit.setFont(McButton);
+        submit.setFocusable(false);
+        submit.setBackground(new Color(0x3B8526));
+        submit.setForeground(Color.WHITE);
 
         // @ TextField
         JTextField _email = new JTextField();     // ? email Field
@@ -54,18 +68,21 @@ public class Signup extends frame {
         // @ Functions
         submit.addActionListener(e -> {
             String mailString = _email.getText();
-            String passString = _password.getText();
+            String passString = new String(_password.getPassword());
             String usernameString = _username.getText();
 
             try {
                 writedb.writeData(mailString, passString, usernameString);
                 ValidateOTP.validateOTP(mailString);
+                passString = "Yo cant heck :)";
+                System.out.println(passString);
             } catch (Exception ex) {
                 System.out.println("An Error Occured : " + ex);
             }
         });
 
         // @ Adding
+        signup.add(OTP);
         signup.add(_email);
         signup.add(_password);
         signup.add(submit);

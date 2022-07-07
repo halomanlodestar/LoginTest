@@ -1,12 +1,7 @@
-import java.awt.*;
+import framework.frame;;
 
-public class test {
+public class test extends frame {
     public static void main(String[] args) {
-        
-        String fonts[] = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 
-        for (String name : fonts) {
-            System.out.println(name.toString());
-        }
     }
 }

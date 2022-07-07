@@ -2,6 +2,7 @@ package framework;
 
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.border.*;
 
 public class base extends frame {
 
@@ -14,10 +15,18 @@ public class base extends frame {
 
         // @ Buttons
         JButton Login = new JButton("Login");
-        Login.setBackground(Color.GREEN);
-        Login.setBounds(170, 135, 170, 30);
+        Login.setBackground(new Color(0x3B8526));
+        Login.setBounds(170, 165, 170, 30);
         Login.setFont(McButton);
-        Login.setForeground(Color.LIGHT_GRAY);
+        Login.setForeground(Color.WHITE);
+        Login.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED/*, new Color(0x47992C), new Color(0x3A7F24*/));
+        Login.setFocusable(false);
+
+
+        // @ Labels
+        JLabel background = new JLabel();
+        background.setIcon(StoneImg);
+        background.setBounds(0, 0, 500, 350);
         
         // :: Function
         Login.addActionListener(e -> {
@@ -26,10 +35,13 @@ public class base extends frame {
             });
 
         JButton SignUp = new JButton("Sign Up");
-        SignUp.setBackground(Color.GREEN);
-        SignUp.setBounds(170, 170, 170, 30);
+        SignUp.setBackground(new Color(0x3B8526));
+        SignUp.setBounds(170, 205, 170, 30);
         SignUp.setFont(McButton);
-        SignUp.setForeground(Color.LIGHT_GRAY);  
+        SignUp.setForeground(Color.WHITE);
+        SignUp.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED));
+        Signup.isDefaultLookAndFeelDecorated();
+        SignUp.setFocusable(false);
 
         // :: Function
         SignUp.addActionListener(e -> {
@@ -40,5 +52,6 @@ public class base extends frame {
         // @ Adding
         Base.add(Login);
         Base.add(SignUp);
+        //Base.add(background);
     }
 }

@@ -2,9 +2,9 @@ package framework;
 
 import java.awt.*;
 import java.io.FileNotFoundException;
-
 import javax.swing.*;
 import support.DB2code;
+import javax.swing.border.*;
 
 public class Login extends frame {
 
@@ -16,11 +16,19 @@ public class Login extends frame {
         fw.setSize(500, 350);
         fw.getContentPane().setBackground(new Color(0x123456));
         fw.setResizable(false);
+        fw.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fw.isAlwaysOnTopSupported();
         
         // @ Buttons
         JButton submit = new JButton("Submit");
         submit.setBounds(205, 230, 95, 30);
         submit.setFont(_font);
+        //submit.setBorder(BorderFactory.createEtchedBorder());
+        submit.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED));
+        submit.setFont(McButton);
+        submit.setFocusable(false);
+        submit.setBackground(new Color(0x3B8526));
+        submit.setForeground(Color.WHITE);
 
         // @ TextField
         JTextField _email = new JTextField();     // ? email Field
@@ -53,7 +61,7 @@ public class Login extends frame {
         // @ Functions
         submit.addActionListener(e -> {
             String mailString = _email.getText();
-            String passString = _password.getText();
+            String passString = new String(_password.getPassword()); 
 
             DB2code Code;
             try {

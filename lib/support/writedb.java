@@ -29,10 +29,10 @@ public class writedb {
     public static void writeData(String email, String password, String username) throws InvalidEmail, IOException, InvalidPass {        
         if (validMail(email) && validPass(password)) {
 
-            String rdb = readDb();
+            //String rdb = readDb();
             FileWriter fw = new FileWriter(db);
             try {
-                fw.write(rdb + " : " + email + " : " + password + " : " + username);
+                fw.write(email + " : " + password + " : " + username);
             } catch (Exception e ) {
                 System.out.println(e);
             }
@@ -50,7 +50,7 @@ public class writedb {
 
     public static void writeData(String email, String password) throws InvalidEmail, IOException, InvalidPass {
 
-        File db = new File("src/userDB.txt");
+        //File db = new File("src/userDB.txt");
 
         if (validMail(email) && validPass(password)) {
             try (FileWriter fw = new FileWriter(db)) {
@@ -121,5 +121,4 @@ public class writedb {
         }
         return b;
     }
-    
 }
