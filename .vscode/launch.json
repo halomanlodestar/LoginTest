@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Signup",
+            "request": "launch",
+            "mainClass": "framework.Signup",
+            "projectName": "OTP_GEN_d2f16156"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",

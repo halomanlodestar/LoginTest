@@ -22,7 +22,6 @@ public class base extends frame {
         Login.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED/*, new Color(0x47992C), new Color(0x3A7F24*/));
         Login.setFocusable(false);
 
-
         // @ Labels
         JLabel background = new JLabel();
         background.setIcon(StoneImg);

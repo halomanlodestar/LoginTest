@@ -15,20 +15,16 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 If you find some sort of bug or think that code can be written much neater, a suggestion is always welcome!! Im a self taught student, so I like every type of external knowledge :)
 
-## Update 
+## Update 08-07-2022
 
-> 1. Added the 'Sign Up' feature.
-> 2. Added a base Screen with two key options, Login & Sign Up
-> 3. Login and SignUp screens are now fully functional. If there is an existing user in data base `ie : src/userDB.txt` then it will log you in.
-> 4. Logging in no longer updates Data Base.
-> 5. Now only Signing Up Updates Data Base.
-> 6. Seprated Frames and now login and Sign up frames extend frame.java class
-> 7. Login and Sign Up screens now show errors in the GUI screen.
+1. Removed OTP window and OTP framework.
+2. Added an OTP pane instead of a window, now it's a part of SignUp Pane and hence will not fill your screen with multiple windows.
+3. Added a "Successfully Registered Screen".
+4. Added Dynamic Textures to the program.
 
 ## Known Issues
 
-If Data Base is empty, data base writing won't work and so won't logging in. Although you can still sign up.
-Password is set to visible, couldn't yet find out an alternate method _/shrug_
+¯\_(ツ)_/¯
 
 
 > Coded in VScode
