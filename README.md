@@ -24,7 +24,7 @@ If you find some sort of bug or think that code can be written much neater, a su
 
 ## Known Issues
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 
 
 > Coded in VScode
