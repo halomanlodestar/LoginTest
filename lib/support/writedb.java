@@ -2,37 +2,23 @@ package support;
 
 import java.io.*;
 import java.util.List;
-import java.util.Scanner;
 
 public class writedb {
 
     public static void main(String[] args) throws InvalidEmail, IOException, InvalidPass {
-        writeData("Kunall@gmail.com", "Ra123", "LodeStar2476");
+        writeData("Kuna6@gmail.com", "Ra123", "LodeStar2476");
     }
 
     static File db = new File("src/userDB.txt");
 
-    private static String readDb() throws FileNotFoundException {
-
-        Scanner sc = new Scanner(db);
-        StringBuffer sb = new StringBuffer("");
-
-        while (sc.hasNextLine()); {
-        sc.nextLine();
-        sb.append(sc.nextLine() + "\n");
-        System.out.println(sb);
-        } 
-        sc.close();
-        return sb.toString();
-    }
-
     public static void writeData(String email, String password, String username) throws InvalidEmail, IOException, InvalidPass {        
         if (validMail(email) && validPass(password)) {
 
-            //String rdb = readDb();
+            String rdb = readdb.readDB();
+            System.out.println(rdb);
             FileWriter fw = new FileWriter(db);
             try {
-                fw.write(email + " : " + password + " : " + username);
+                fw.write(rdb +email + " : " + password + " : " + username);
             } catch (Exception e ) {
                 System.out.println(e);
             }
@@ -50,11 +36,9 @@ public class writedb {
 
     public static void writeData(String email, String password) throws InvalidEmail, IOException, InvalidPass {
 
-        //File db = new File("src/userDB.txt");
-
         if (validMail(email) && validPass(password)) {
             try (FileWriter fw = new FileWriter(db)) {
-            fw.write(readDb() + email + " : " + password);
+            fw.write(readdb.readDB() + email + " : " + password);
             }
         }
         else if (!validMail(email)) {

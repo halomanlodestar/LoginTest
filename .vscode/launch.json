@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch readdb",
+            "request": "launch",
+            "mainClass": "support.readdb",
+            "projectName": "OTP_GEN_d2f16156"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "OTP_GEN_d2f16156"
+        },
+        {
+            "type": "java",
             "name": "Launch Signup",
             "request": "launch",
             "mainClass": "framework.Signup",
