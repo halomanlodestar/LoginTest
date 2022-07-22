@@ -23,7 +23,8 @@ If you find some sort of bug or think that code can be written much neater, a su
 ## Known Issues
 
 `1. ` For now, you can only login with latest saved user id, program can't read older ones right now. 
-`2. ` Hadn't updated since last decade
+
+`2. ` Hadn't updated since last decade.
 
 
 > Coded in VScode
