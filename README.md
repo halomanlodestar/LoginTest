@@ -15,7 +15,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 If you find some sort of bug or think that code can be written much neater, a suggestion is always welcome!! Im a self taught student, so I like every type of external knowledge :)
 
-## Update 10-07-2022
+## Update 22-07-2022
 
 1. Seprated writedb and readdb, both doing jobs respective to their names.
 2. Fixed data base, it now correcty reads and saves data.
