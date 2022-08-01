@@ -6,6 +6,9 @@ import java.awt.*;
 public class ValidateOTP extends frame {
 
     public ValidateOTP(String string) {
+        /**
+         * Dropped this plane cuz I was't getting enouh time.
+         */
     }
 
     public static void validateOTP(String s) {
@@ -24,7 +27,7 @@ public class ValidateOTP extends frame {
 
         // @ Button
         JButton submitOTP = new JButton("SUBMIT");
-        submitOTP.setFont(_font);
+        submitOTP.setFont(inputFont);
         submitOTP.setBounds(155, 155, 95, 30);
 
         // @ Label
@@ -39,7 +42,7 @@ public class ValidateOTP extends frame {
         // @ TextField
         JTextField _otp = new JTextField();
         _otp.setBounds(140, 80, 120, 25);
-        _otp.setFont(_font);
+        _otp.setFont(inputFont);
 
         // @ Adding
         otpvalid.add(submitOTP);

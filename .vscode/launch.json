@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SignUpPane",
+            "request": "launch",
+            "mainClass": "framework.panes.SignUpPane",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
+            "name": "Launch LoginPane",
+            "request": "launch",
+            "mainClass": "framework.panes.LoginPane",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
+            "name": "Launch SignPanel",
+            "request": "launch",
+            "mainClass": "framework.SignPanel",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Signup",
+            "request": "launch",
+            "mainClass": "framework.Signup",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LoginTest_4ed8bcc"
+        },
+        {
+            "type": "java",
             "name": "Launch readdb",
             "request": "launch",
             "mainClass": "support.readdb",

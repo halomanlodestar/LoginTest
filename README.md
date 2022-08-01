@@ -15,14 +15,21 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 If you find some sort of bug or think that code can be written much neater, a suggestion is always welcome!! Im a self taught student, so I like every type of external knowledge :)
 
-## Update 10-07-2022
+## Update 01-08-2022
 
-1. Seprated writedb and readdb, both doing jobs respective to their names.
-2. Fixed data base, it now correcty reads and saves data.
+**NOTE** : I did re-write everything from scratch for the sake of asthetics..
+
+1. Removed all Jframes except Base frame.
+2. Merged everything into one frame in the form of JLayeredPanes..
+    Pros :
+        -> Takes much less memory 
+        -> Wraps things up
+3. Removed OTPvalidation service because didn't get motivation to work on it.
 
 ## Known Issues
 
-`1. ` For now, you can only login with latest saved user id, program can't read older ones right now. 
+`1.` Backend is frozen.
+`2.` Multiple main methods (for testing)
 
 
 > Coded in VScode
