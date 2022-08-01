@@ -15,7 +15,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 If you find some sort of bug or think that code can be written much neater, a suggestion is always welcome!! Im a self taught student, so I like every type of external knowledge :)
 
-## Update 22-07-2022
+## Update 01-08-2022
 
 **NOTE** : I did re-write everything from scratch for the sake of asthetics..
 
