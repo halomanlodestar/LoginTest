@@ -22,6 +22,7 @@ If you find some sort of bug or think that code can be written much neater, a su
 1. Removed all Jframes except Base frame.
 2. Merged everything into one frame in the form of JLayeredPanes..
     Pros :
+    
         -> Takes much less memory 
         -> Wraps things up
 3. Removed OTPvalidation service because didn't get motivation to work on it.
